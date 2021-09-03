@@ -1,6 +1,6 @@
 # My Banner
 figlet Hi! Habib
-echo "  ------- Welcome Back Habib -------"
+echo "  ------- Welcome Back $(whoami) -------"
 extip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
 echo "External IP: ${extip}"
 echo ""
@@ -11,7 +11,7 @@ alias va='source ./venv/bin/activate'
 # Reloads the bashrc file
 alias bashreload="source ~/.bashrc && echo Bash config reloaded"
 # Scripts Directory
-alias scriptsdir='cd /home/mknh/scripts;ls'
+alias scriptsdir="cd /home/$(whoami)/scripts;ls"
 # Clear the screen of your clutter
 alias c="clear;source ~/.bashrc"
 alias cs="clear;ls"
@@ -26,19 +26,6 @@ alias ytpl="youtube-dl -o '/home/mknh/Downloads/YouTube/%(playlist_title)s/%(pla
 # Exit
 alias q='exit'
 # Aliases For CD
-alias mknhdir="cd ~/MKNH/"
-alias devdir='cd ~/MKNH/Dev;ls'
-alias pydevdir='cd ~/MKNH/Dev/Python;ls'
-alias dbox='cd ~/Dropbox;ls'
-alias gdrive='cd ~/Google-Drive;ls'
-alias gdpyprojects='cd ~/Google-Drive/Dev/Projects/Python;ls'
-alias gdjsprojects='cd ~/Google-Drive/Dev/Projects/JavaScript;ls'
-alias gdbashprojects='cd ~/Google-Drive/Dev/Projects/Bash;ls'
-alias gdardprojects='cd ~/Google-Drive/Dev/Projects/Arduino;ls'
-alias dbpyprojects='cd ~/Dropbox/Dev/Projects/Python;ls'
-alias dbjsprojects='cd ~/Dropbox/Dev/Projects/JavaScript;ls'
-alias dbbashprojects='cd ~/Dropbox/Dev/Projects/Bash;ls'
-alias dbardprojects='cd ~/Dropbox/Dev/Projects/Arduino;ls'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'

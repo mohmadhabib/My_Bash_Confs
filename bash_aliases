@@ -22,7 +22,7 @@ alias diskspace="du -S | sort -n -r |more"
 # Find Python Virtual Envs around Home Dirictory
 alias findenvs='locate -b "\activate" | grep "/home"'
 # YouTube Downloader
-alias ytpl="youtube-dl -o '/home/mknh/Downloads/YouTube/%(playlist_title)s/%(playlist_index)s_%(title)s.%(ext)s'"
+alias ytpl="youtube-dl -o '/home/$(whoami)/Downloads/YouTube/%(playlist_title)s/%(playlist_index)s_%(title)s.%(ext)s'"
 # Exit
 alias q='exit'
 # Aliases For CD
